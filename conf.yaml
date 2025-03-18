@@ -1,0 +1,7 @@
+group: '#-1002286283540' #Тут пишем ид группы его можно получить в веб-телеге в ссылке или через код элемента
+
+stop_list: 
+  - '- Only Boosters'
+  - '- Only Active Users(Buy/Sell/Bid)'
+  - '- Only Premium Users'
+
