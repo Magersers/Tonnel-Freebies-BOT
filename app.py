@@ -104,8 +104,6 @@ def Analiz(driver,const):
         time.sleep(5)
         try:
             driver.find_element(By.XPATH, "//button[text()='Enter Giveaway']").click()
-            chet_count = 1 + chet_count
-            print(f'Собрали раздач:{chet_count}')
             time.sleep(1)
             try:
                 driver.find_element(By.XPATH, "//button[@aria-label='Close']").click()
