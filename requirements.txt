@@ -1,0 +1,6 @@
+selenium
+Pillow
+chromedriver-autoinstaller
+webdriver-manager
+fake-useragent
+pyyaml
