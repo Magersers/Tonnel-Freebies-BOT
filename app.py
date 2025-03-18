@@ -87,6 +87,8 @@ def Analiz(driver,const):
         try:
             last_added_element.find_element(By.CSS_SELECTOR, 'div.InlineButtons div.row button.Button.tiny.primary.has-ripple').click()
         except:
+            last_added_element.find_element("xpath", f"//a[@class='text-entity-link' and text()='@{group}']").click()
+            time.sleep(1)
             print('Ошибка запуска веб приложения! Попытка 2')
             time.sleep(2)
             try:
