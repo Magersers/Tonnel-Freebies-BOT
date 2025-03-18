@@ -23,8 +23,11 @@ def create_driver():
     chrome_options.add_argument("--window-size=1920,600")
     chrome_options.add_argument('--ignore-certificate-errors')
     chrome_options.add_argument("--disable-software-rasterizer")
+    chrome_options.add_argument('--ignore-certificate-errors')  # Игнорировать ошибки SSL
+    chrome_options.add_argument('--ignore-ssl-errors') 
 
     service = Service(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service, options=chrome_options)
     driver.get('http://web.telegram.org/a/')  # Замените на нужный URL
     return driver
+
